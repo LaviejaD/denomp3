@@ -1,1 +1,1 @@
-export { play } from "./src/main.ts";
+export { Audio } from "./src/main.ts";

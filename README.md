@@ -2,16 +2,16 @@
 
 Play audio mp3 from the Command-line
 
-> deno run --allow-read --allow-run example.ts
+> deno run --allow-net --allow-write --allow-read --allow-run example.ts
 
 ### Example
 
 ```ts
-import { play } from "./mod.ts";
+import { Audio } from "jsr:@onlyd/denomp3";
 //async
-play("./assets/coin.mp3");
+new Audio.play("https://straypointers.com/sp.mp3");
 //sync
-const result = await play("./assets/coin.mp3");
+await new Audio.play("https://straypointers.com/sp.mp3");
 ```
 
 ### Credits
